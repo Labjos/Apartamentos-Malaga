@@ -51,8 +51,7 @@
             margin-left: 120px;
     }
   }
-
-  .owl-prev {
+.owl-prev {
     position: absolute;
     right: 0px;
     top: 383px;
@@ -78,7 +77,7 @@
     background: $Corporate-1;
     opacity: 1;
     align-items: center;
-  }
+}
 .owl-theme .owl-controls .owl-page span {
     display: block;
     width: 12px;
@@ -96,20 +95,16 @@
     right: -250px;
     top: 400px;
 }
-
 #botones{
     display: flex;
     margin-left: 120px;
     margin-top: 20px;
 }
-
 .button-promotion {
     @include button-promotion($background-color, $color);
     margin-left: 20px;
     font-family:'Poppins', sans-serif;
-
 }
-
 .button-link {
     @include button-link($background-link-color, $color);
     a{
@@ -122,4 +117,3 @@
         } 
     } 
 }
-
