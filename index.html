@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Apartamentos de aproximadamente 120 m2 divididos en dos plantas.">
+    <meta name="Keywords" content="apartamentos ático Málaga nuevos compra planta doble">
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/stiloDepartamentos.css" />
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/c6ca3be74f.js" crossorigin="anonymous"></script>
+    <title>Apartamentos</title>
+  </head>
+  <body>
+    <section id="showRoom">
+      <div id="image">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="../imagenes/exterior.jpg" alt="Fachada de la casa" />
+          </div>
+          <div class="item">
+            <img src="../imagenes/estar.jpg" alt="Living interior" />
+          </div>
+          <div class="item">
+            <img src="../imagenes/cocina.jpg" alt="cocina equipada" />
+          </div>
+          <div class="item">
+            <img src="../imagenes/dormitorio.jpg" alt="dormitorio y cama" />
+          </div>
+          <div class="item">
+            <img src="../imagenes/bano.jpg" alt="baño amplio" />
+          </div>
+        </div>
+      </div>
+    
+      <div id="description">
+        <h2 class="subtitle">Apartamentos</h2>
+        <h1 class="title">Atico </br> Duplex</h1>
+        <p class="texto-normal">
+          Apartamentos de aproximadamente 120 m2 divididos en dos plantas. En la
+          primera se encuentras 2 o 3 dormitorios independientes con dos camas
+          individuales cada uno, 2 baños completos, salón comedor y cocina
+          independiente. La planta superior es una buhardilla con 2 camas
+          individuales con suficiente espacio para añadir más camas y terraza
+          privada.
+        </p>
+        <div id="botones">
+          <button class="button-link"><a href="./detalle.html">Leer más<i class="fas fa-arrow-right"></i></a></button>
+          <button class="button-promotion">Reservar<i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo").owlCarousel({
+          navigation: true, // Show next and prev buttons
+
+          slideSpeed: 800,
+          paginationSpeed: 1000,
+          navigationText: [
+            "<img src='../imagenes/1x/outline_arrow_back_black_24dp.png'>",
+            "<img src='../imagenes/1x/outline_arrow_forward_white_24dp.png'>",
+          ],
+
+          items: 1,
+          autoPlay: 5000,
+          itemsDesktop: [1200, 1],
+          itemsDesktopSmall: [1080, 1],
+          itemsTablet: [800, 1],
+          itemsMobile: [599, 1],
+        });
+      });
+    </script>
+  </body>
+</html>

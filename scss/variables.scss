@@ -1,0 +1,55 @@
+/**
+* Asignación de variables 
+* Fuentes: 
+* - Font1-> Usar para Títulos
+* - Font2-> Usar para títulos secundarios
+* - Font-text -> Usar para textos normales
+* Colores:
+Corporate-1 -> Usar para color Principal
+Corporate-2 -> Usar para color secundario
+**/
+
+//Fuentes
+//Font
+//font-family: 'Poppins', sans-serif;
+
+$Font1: bold 45px 'Poppins', sans-serif;
+$Font2: bold 18px'Poppins', sans-serif;
+$Font-text: 12px 'Poppins', sans-serif;
+
+//Colores
+$Corporate-1:#F2F2F2;
+$Corporate-2: #01DFD7;
+
+//Clase "button-promotion"
+
+@mixin button-promotion($background-color, $color) {
+    width: 150px;
+    height: 40px;
+    border: 0;
+    background-color: $background-color;
+    color: $Corporate-1;
+    padding: 20px 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin button-link($background-link-color, $color-1) {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #01DFD7;
+    background-color: $background-link-color;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor:pointer;
+}
+
+//otras variables
+$color: $Corporate-2; 
+$color-1:$Corporate-1;
+$background-color:$Corporate-2;
+$background-link-color:$Corporate-1;
