@@ -26,7 +26,16 @@ Corporate-2 -> Usar para color secundario
   display: block;
   width: 100%;
   height: auto;
-  margin: auto; }
+  margin: auto;
+  transition-delay: 5s;
+  animation-duration: 10s;
+  animation-name: desaparecer; }
+
+@keyframes desaparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 #description {
   width: 45%;
@@ -40,13 +49,17 @@ Corporate-2 -> Usar para color secundario
     line-height: 45px;
     color: #000;
     margin-left: 120px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    animation-duration: 5s;
+    animation-name: show; }
   #description h2.subtitle {
     margin: 0;
     font: bold 18px "Poppins", sans-serif;
     color: #01DFD7;
     margin-top: 30px;
-    margin-left: 120px; }
+    margin-left: 120px;
+    animation-duration: 2s;
+    animation-name: show; }
   #description p.texto-normal {
     font: 12px "Poppins", sans-serif;
     color: #000;
@@ -55,7 +68,15 @@ Corporate-2 -> Usar para color secundario
     height: auto;
     line-height: 18px;
     margin-top: 15px;
-    margin-left: 120px; }
+    margin-left: 120px;
+    animation-duration: 7s;
+    animation-name: show; }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .owl-prev {
   position: absolute;
@@ -120,7 +141,7 @@ Corporate-2 -> Usar para color secundario
   align-items: center;
   justify-content: space-around;
   margin-left: 20px;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .button-link {
   width: 150px;
@@ -136,6 +157,6 @@ Corporate-2 -> Usar para color secundario
     text-decoration: none;
     list-style-type: none;
     color: #01DFD7;
-    font-family: 'Poppins', sans-serif; }
+    font-family: "Poppins", sans-serif; }
     .button-link a .fas.fa-arrow-right {
       margin-left: 20px; }
